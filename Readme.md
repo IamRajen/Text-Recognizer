@@ -16,6 +16,12 @@ Before you begin : https://cloud.google.com/vision/docs/setup
 
 Instructions : Make some changes as commented in the code. 
 
+`documents = ["gs://imag_reg/input_form_a.pdf" , "gs://imag_reg/input_form_b.pdf"] # add your document link as needed`
+
+`project_id = 'image-rec-249212' # your project ID here`
+
+`os.environ['GOOGLE_APPLICATION_CREDENTIALS']= r"image-rec-249212-1b96a4b53001.json" # download the json file and use here`
+
 
 
 ### <u>AWS Textract API</u>
@@ -27,6 +33,12 @@ Code/File :  **text_recognizer_aws.py**
 How it Works : https://docs.aws.amazon.com/textract/latest/dg/how-it-works.html 
 
 Instructions : Make some changes as commented in the code. Make sure you don't include your ACCESS_ID 						and ACCESS_KEY in the code directly for security concerns. Consider using environment 						configs and injecting them in the code.
+
+
+
+`s3BucketName = "textract-console-us-east-2-683c5a84-1e08-4da1-8913-3988404b5ded" # provide the bucket name`
+
+`documents = ["input_form_a.pdf", "input_form_b.pdf"] # provide the documents name in list`
 
 
 
