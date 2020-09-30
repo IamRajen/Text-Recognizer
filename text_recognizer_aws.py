@@ -80,7 +80,6 @@ def getJobResults(jobId):
 # Process document.
 for document in documents:
     response = None
-    print(document)
     jobId = startJob(s3BucketName, document)
     print("Started job with id: {}".format(jobId))
     if (isJobComplete(jobId)):
